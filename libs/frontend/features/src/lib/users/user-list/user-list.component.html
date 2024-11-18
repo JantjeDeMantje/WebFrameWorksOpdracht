@@ -6,19 +6,15 @@
             <th>id</th>
             <th>name</th>
             <th>email</th>
-            <th>isActive</th>
-            <th>imageUrl</th>
         </tr>
     </thead>
 
 
 <tbody>
     <tr *ngFor="let user of users">
-        <td>{{user._id}}</td>
-        <td><a [routerLink]="user._id">{{user.name}}</a></td>
-        <td>{{user.emailAddress}}</td>
-        <td>{{user.isActive}}</td>
-        <td>{{user.profileImgUrl}}</td>
+        <td>{{user.id}}</td>
+        <td><a [routerLink]="['/user', user.id]">{{user.firstName}}{{user.lastName}}</a></td>
+        <td>{{user.emailAdress}}</td>
     </tr>
 </tbody>
 </table>
