@@ -11,12 +11,12 @@ export const appRoutes: Route[] = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'about', component: AboutComponent },
     { path: 'users', pathMatch: 'full', component: UserListComponent },
-    { path: 'users/:id', component: UserDetailsComponent },
-    { path: 'users/new', component: UserEditComponent },
-    { path: 'users/:id/new', component: UserEditComponent },
+    { path: 'user/new', component: UserEditComponent },
+    { path: 'user/:id', pathMatch: 'full', component: UserDetailsComponent },
+    { path: 'user/:id/new', component: UserEditComponent },
 
 
 
 
-    { path: '**', redirectTo: 'dashboard' }
+    // { path: '**', redirectTo: 'dashboard' }
 ];
