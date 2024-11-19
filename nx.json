@@ -60,5 +60,16 @@
             "style": "css"
         }
     },
-    "nxCloudAccessToken": "ZjM2ZDA1YjgtMWY1Ny00M2YxLWFlZmMtNjUxYzk3OWFjYmJmfHJlYWQtd3JpdGU="
+
+    "tasksRunnerOptions": {
+        "default": {
+            "runner": "nx-cloud",
+            "runner": "nx/tasks-runners/default",
+            "options": {
+                "cacheableOperations": ["build", "lint", "test", "e2e"],
+                "accessToken": "your-token",
+                "url": "your-url"
+            }
+        }
+    }
 }
