@@ -30,6 +30,8 @@
             "cache": true,
             "inputs": ["default", "^production"]
         }
+
+        
     },
     "namedInputs": {
         "default": ["{projectRoot}/**/*", "sharedGlobals"],
@@ -65,6 +67,7 @@
         "default": {
             "runner": "nx/tasks-runners/default",
             "options": {
+                "neverConnectToCloud": true,
                 "cacheableOperations": ["build", "lint", "test", "e2e"]
             }
         }
