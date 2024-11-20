@@ -9,7 +9,8 @@ export class User {
   firstName: string = '';
   lastName: string = '';
   emailAdress: string = '';
-  role: UserRole = UserRole.guest;
+  password: string = '';
+  imageUrl: string = '';
 
   constructor(firstName = '', lastName = '', emailAdress = '') {
     this.firstName = firstName;
