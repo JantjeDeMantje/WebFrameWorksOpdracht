@@ -3,10 +3,10 @@
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
-        "deploy": "nx run share-a-meal-web:build",
-        "build:my-app":"nx run my-app:build:production",
-        "build": "nx run-many -t build",
-        "test": "nx run-many -t test"
+        "deploy": "nx run share-a-meal-web:build --no-cloud",
+        "build:my-app":"nx run my-app:build:production --no-cloud",
+        "build": "nx run-many -t build --no-cloud",
+        "test": "nx run-many -t test --no-cloud"
     },
     "private": true,
     "dependencies": {

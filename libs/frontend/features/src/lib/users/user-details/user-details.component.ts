@@ -22,10 +22,10 @@ export class UserDetailsComponent implements OnInit {
 
     // Deze manier maakt gebruik van RxJs Observables.
     // We komen hier bij services en HTTP op terug.
-    this.route.paramMap.subscribe((params) => {
-      this.userId = params.get('id');
-      this.user = this.userService.getUserById(Number(this.userId)); // Waarom 'Number'?
-    });
+    // this.route.paramMap.subscribe((params) => {
+    //   this.userId = params.get('id');
+    //   this.user = this.userService.getUserById(Number(this.userId)); // Waarom 'Number'?
+    // });
   }
 }
 
