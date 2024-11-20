@@ -13,7 +13,7 @@ export class UserListComponent {
     constructor(private userService: UserService) {}
   
     ngOnInit(): void {
-      this.users = this.userService.getUsers();
+      this.userService.getUsersAsync().subscribe();
     }
 
 }

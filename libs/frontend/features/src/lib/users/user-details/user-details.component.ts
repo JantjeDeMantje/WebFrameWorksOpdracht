@@ -24,7 +24,7 @@ export class UserDetailsComponent implements OnInit {
     // We komen hier bij services en HTTP op terug.
     this.route.paramMap.subscribe((params) => {
       this.userId = params.get('id');
-      this.user = this.userService.getUserById(Number(this.userId)); // Waarom 'Number'?
+      this.userService.getUserByIdAsync(Number(this.userId)); // Waarom 'Number'?
     });
   }
 }

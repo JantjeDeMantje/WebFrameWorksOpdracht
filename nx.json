@@ -30,6 +30,8 @@
             "cache": true,
             "inputs": ["default", "^production"]
         }
+
+        
     },
     "namedInputs": {
         "default": ["{projectRoot}/**/*", "sharedGlobals"],
@@ -60,5 +62,14 @@
             "style": "css"
         }
     },
-    "nxCloudAccessToken": "ZjM2ZDA1YjgtMWY1Ny00M2YxLWFlZmMtNjUxYzk3OWFjYmJmfHJlYWQtd3JpdGU="
+
+    "tasksRunnerOptions": {
+        "default": {
+            "runner": "nx/tasks-runners/default",
+            "options": {
+                "neverConnectToCloud": true,
+                "cacheableOperations": ["build", "lint", "test", "e2e"]
+            }
+        }
+    }
 }
